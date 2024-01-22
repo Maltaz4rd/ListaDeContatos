@@ -60,6 +60,13 @@ class application():
         self.codeEntry = Entry(self.frame_1)
         self.codeEntry.place(relx= 0.01, rely= 0.1, relwidth= 0.1, relheight= 0.07)
 
+        ## NAME
+        self.nameLabel = Label(self.frame_1, text= "Name:")
+        self.nameLabel.place(relx= 0.01, rely= 0.22)
+        self.nameEntry = Entry(self.frame_1)
+        self.nameEntry.place(relx= 0.01, rely= 0.31, relwidth= 0.5, relheight= 0.07)
+
+
         
 
 

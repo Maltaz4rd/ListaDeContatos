@@ -54,23 +54,40 @@ class application():
         self.deleteButton.place(relx= 0.84, rely= yButtons, relwidth= 0.1, relheight= 0.1)
 
         #------------------- LABELS AND ENTRYES -------------------------
-        ## CODE
+        ## CODIGO
         self.codeLabel = Label(self.frame_1, text="cod:")
         self.codeLabel.place(relx= 0.01, rely= 0.02)
         self.codeEntry = Entry(self.frame_1)
         self.codeEntry.place(relx= 0.01, rely= 0.1, relwidth= 0.1, relheight= 0.07)
 
-        ## NAME
+        ## NOME
         self.nameLabel = Label(self.frame_1, text= "Name:")
         self.nameLabel.place(relx= 0.01, rely= 0.22)
         self.nameEntry = Entry(self.frame_1)
         self.nameEntry.place(relx= 0.01, rely= 0.31, relwidth= 0.5, relheight= 0.07)
 
+        ## NUMERO TELEFONICO
+        self.numberLabel = Label(self.frame_1, text= "Phone Number:")
+        self.numberLabel.place(relx= 0.01, rely= 0.42)
+        self.numberEntry = Entry(self.frame_1)
+        self.numberEntry.place(relx= 0.01, rely= 0.51, relwidth= 0.4, relheight= 0.07)
 
-        
+        ## EMAIL
+        self.emailLabel = Label(self.frame_1, text= "Email:")
+        self.emailLabel.place(relx= 0.51, rely= 0.42)
+        self.emailEntry = Entry(self.frame_1)
+        self.emailEntry.place(relx= 0.51, rely= 0.51, relwidth= 0.4, relheight= 0.07)
 
-
-
-
+        ## descrição do contato
+        self.description = Label(self.frame_1, text= "Selecione a descrição do contato:")
+        self.description.place(relx= 0.01, rely= 0.62)
+        self.descriptionSelButton01 = Radiobutton(self.frame_1, text= "Meu contato", value= "Meu contato")
+        self.descriptionSelButton01.place(relx= 0.01, rely= 0.72)
+        self.descriptionSelButton01 = Radiobutton(self.frame_1, text= "Familia", value= "Familia")
+        self.descriptionSelButton01.place(relx= 0.01, rely= 0.82)
+        self.descriptionSelButton01 = Radiobutton(self.frame_1, text= "Amigo", value= "Amigo")
+        self.descriptionSelButton01.place(relx= 0.51, rely= 0.72)
+        self.descriptionSelButton01 = Radiobutton(self.frame_1, text= "Trabalho", value= "Trabalho")
+        self.descriptionSelButton01.place(relx= 0.51, rely= 0.82)
     
 application()
